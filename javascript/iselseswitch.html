@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>if else</title>
+    
+    </head>
+    <body>
+    <p>spped on the mototrway:<input id = "speed" type = "number"><button onclick="check()">check</button></p>
+      <p>your season <input id = "myinput"><button onclick="checks()">submit</button></p>
+    <script>
+        function check(){
+     var speed = document.getElementById("speed").value;
+        if(speed>70){
+            window.alert("you are fast");
+        }
+        else if(speed<40){
+            window.alert("you are slow");
+        }
+        else{
+            window.alert("you are well going");
+        }
+        }
+        function checks(){
+            var x = document.getElementById("myinput").value.toLowerCase();
+            switch(x){
+                case "summer":
+                    window.alert("grmi");
+                    break;
+                case "winter":
+                    window.alert("srdi");
+                    break;
+                case "spring":
+                    window.alert("mst");
+                    break;
+                case "rainy":
+                    window.alert("pani");
+                    break;
+                default:
+                    window.alert("dont no");
+            }
+        }
+        </script>
+        
+    </body>
+</html>

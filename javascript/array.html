@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>array</title>
+    
+    </head>
+    <body>
+    
+    <p id = "mypara">javascript.</p>
+    <script>
+    var shoplist = ["bread","eggs","milk"];
+        var shoplist2 = new Array("bread","chai","coffe");
+        document.getElementById("mypara").innerHTML += "<br />" + shoplist2[2];
+   function showresult(x){
+       document.getElementById("mypara").innerHTML += "<br />" + x;
+   }
+        showresult(shoplist);
+        shoplist[2] = "orange";
+         showresult(shoplist);
+        delete shoplist[1];
+         showresult(shoplist);
+        shoplist[1] = "yogurt";
+        shoplist.splice(1,1);
+         showresult(shoplist);
+        shoplist.splice(1,0,"banana","apple");
+         showresult(shoplist);
+        shoplist.sort();
+         showresult(shoplist);
+        shoplist.reverse();
+         showresult(shoplist);
+        var myString = 'how is weather';
+        var myArray = myString.split(' ');
+        showresult(myArray);
+        </script>
+    </body>
+</html> 

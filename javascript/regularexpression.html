@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>alert msg</title>
+    
+    </head>
+    <body>
+    <p>string:<span id="string"></span></p>
+     <p>pattern:<span id="pattern"></span></p>
+          <p>result(search):<span id="search"></span></p>
+          <p>result(match):<span id="match"></span></p>
+    <script>
+    var str = "Atlana"; 
+    var pattern = /a/g;
+   document.getElementById("string").innerHTML = str;
+ document.getElementById("pattern").innerHTML = pattern;
+        document.getElementById("search").innerHTML = str.search(pattern);
+        document.getElementById("match").innerHTML = pattern.test(str);
+        </script>
+    </body>
+</html>

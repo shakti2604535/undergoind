@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <title>alert msg</title>
+    
+    </head>
+    <body>
+    
+    <p id="count">0</p>
+        <button onclick="clearInterval(mycount)">stop counting</button>
+        <button onclick="clearTimeout(delay)">avoid welcome</button>
+    <script>
+        var counter = document.getElementById("count");
+     var x = 0;
+        var mycount = setInterval(function(){x++;counter.innerHTML = x},1000)
+    var delay = setTimeout(function(){window.alert("hey hi")},3000);
+        </script>
+    </body>
+</html>
